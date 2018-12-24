@@ -1,0 +1,35 @@
+/* Example Input:
+Please give a number as 1st variable: 1 (e.g. int a=1)
+Please give a number as 2nd variable: 2 (e.g. int b=2)
+
+Example Output:
+The value of the 1st variable: 2 (e.g. int a)
+The value of the 2nd variable: 1 (e.g. int b) */
+
+
+using System;  
+  public class SwapExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       string ui1,ui2;
+       int  a=0, b=0;
+       
+       Console.Write("Please enter first integer value: ");
+			 ui1 = Console.ReadLine();
+			 a = Convert.ToInt32(ui1);
+			 Console.WriteLine("You entered {0}",a);
+       
+       Console.Write("Please enter second integer value: ");
+			 ui2 = Console.ReadLine();
+			 b = Convert.ToInt32(ui2);
+			 Console.WriteLine("You entered {0}",b);
+       
+       Console.WriteLine("Before swap, first integer was "+a+" and second integer was "+b);
+       a=a*b;
+       b=a/b;
+       a=a/b;
+       Console.WriteLine("After swap, first integer changed to = "+a+" and second integer changed to = "+b);
+	   Console.WriteLine("Swapped successfully !");
+     }  
+  }   
