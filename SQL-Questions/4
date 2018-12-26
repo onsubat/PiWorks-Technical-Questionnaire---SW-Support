@@ -1,0 +1,7 @@
+
+
+SELECT SUM(x) FROM (SELECT COUNT (DISTINCT userId) AS x
+FROM i_user_login_logs
+GROUP BY userId
+HAVING COUNT (*) > 3
+ORDER BY userId ASC);
